@@ -1,0 +1,168 @@
+* { margin: 0 ;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    box-sizing: border-box;
+}
+
+head {
+    display: none;
+}
+
+body {
+    background: #eee5f3;  
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header, footer {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    justify-content: space-between;
+    background-color: #f9f5fd;
+}
+
+.logo { 
+    padding: 15px 20px;
+    display: flex;
+}
+
+main {
+    max-width: 1360px;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 50px 0;
+    margin: 5px, auto;
+}
+
+section {
+    margin: 20px;  
+}
+
+button {
+    width: 250px;
+    height: 35px;
+    border-radius: 11px;
+    margin: 2.5px;
+    border: 1.5px solid #bf7fc5; 
+    background-color: #f9f5fd;
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;
+}
+
+button:hover {
+    color: #ba52c4; 
+    font-weight: bold;
+    background-color: #cca3e4; /*Violeta oscuro footer*/
+}
+
+/*Inicio sección izquierda.........*/
+section .input {
+    border-top: 0px; 
+}
+
+.input_content {
+    width: 100%;
+    border: none;  
+    resize: none;
+    background: none;
+    background-color: #f9f5fd;
+    outline: 1.5px solid #92139e;
+    border-radius: 8px;
+    box-shadow:3px 3px 3px 0px;
+    margin: 20px 0;
+    padding: 35px; 
+    line-height: 30px; /*interlineado*/
+}
+
+.signo_advertencia {
+    font-size: 14px ;
+    font-style: oblique;
+    font-weight: bolder;
+    color: #92139e;
+    margin: 16px;
+}
+
+.input > .botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 16px;
+}
+
+/*Botón copiar*/
+.copy_button {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Inicio sección derecha: Message.........*/
+.message {
+    background-image: url(../imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #f9f5fd;
+    display: flex;
+    border-radius: 8px;
+    padding: 35px;
+    border: 1.5px solid #92139e;
+    text-align: center;
+    line-height: 25px;
+}
+
+.message::placeholder {
+
+   color: #92139e; 
+   font-weight: bold;
+   font-style: oblique;
+}
+
+
+/*Inicio Footer*/
+footer {
+    background-color:#cca3e4; /*Violeta 1*/
+    justify-content: center;
+    margin-top: auto;
+}
+
+footer, #logo_github{
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;   
+}
+
+footer p {
+    font-family: 'Raleway', sans-serif;
+    margin-top: .2rem;
+    font-weight: bold;
+    font-size: normal;
+    color: #2d1430;
+    text-align: center
+}
+
+/*-----Aquí CSS para celular*/
+@media all and (max-width: 1100px) {
+    
+    footer {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+

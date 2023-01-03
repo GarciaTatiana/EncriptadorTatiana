@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css"> <!--Correción por defecto del CSS-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Fuentes del encriptador-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> <!--link para modo oscuro-->
+        
+        <link rel="icon" type="icon" href="imagenes/favicon.ico"/>
+
+    <title> Encriptador de texto </title>
+
+</head> 
+    <body class="grid">
+        <header class="header_logo">         
+            <div class="logo"><img src="imagenes/Logo.png" alt="Logo con inicial a de Alura"></div>
+        </header> 
+        <main>
+            <section class="input">
+                
+                <textarea class="input_content" placeholder="Ingresa aquí el texto que quieras encriptar..." rows="5" cols="35" ></textarea>  
+                <div class="signo_advertencia">
+                     <p> &#9888; Solo letras minúsculas y sin acentos</p>
+                </div>
+                    <br>
+                <div class="botones">
+                    <button class="encriptar" onclick = "btnEncriptar()" >Encriptar</button>
+                    <button class="desencriptar" onclick= "btnDesencriptar()" >Desencriptar</button>
+                </div>    
+            </section>          
+            <section class="output">
+                <div>
+                    <textarea class= "message" placeholder= "No hay mensaje." rows="12" cols="30" > </textarea>
+                    <div class="copy_button"><button class="copy" id="copyId">Copiar</button></div>
+                </div> 
+            </section>
+        </main>
+
+        <footer>
+            <div> 
+               <a href="https://github.com/GarciaTatiana" target="_blank">
+                    <i id= "logo_github" class="fa-brands fa-github-alt"></i>
+               </a>
+               <p class="copyright"> &copy; Tatiana García</p> 
+            </div>
+        </footer> 
+      <script src="script.js"></script>
+      <script src="https://kit.fontawesome.com/537af080a4.js" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
